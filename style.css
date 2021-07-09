@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#bloc {
+  display: grid;
+  grid-template-areas: "one two three four";
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+
+
+.box {
+  height: 100vh;
+  width: 1920px;
+  position: relative;
+}
+
+.one {
+  grid-area: one;
+  background-color: #001B11;
+}
+.two {
+  grid-area: two;
+  background-color:   #038058;
+}
+.three {
+  grid-area: three;
+  background-color: #001B11;
+}
+
+
+
+
+
+.position1 {
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 800px;
+  width: 300px;
+}
+
+.position2 {
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 800px;
+  width: 600px;
+  left: 299px;
+  transform-origin: top left;
+  transform: rotateZ(-50deg);
+}
+
+.position3 {
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 340px;
+  left: 685px;
+  width: 1253px;
+}
+
+.position4 {
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top:  340px;
+  width: 300px;
+}
+
+.position5 {
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 340px;
+  width: 600px;
+  left: 299px;
+  transform-origin: top left;
+  transform: rotateZ(50deg);
+}
+
+.position6 {
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 800px;
+  left: 684px;
+  width: 1253px;
+}
+
+.visible {
+  transition: 3s;
+}
+
+.invisible {
+  width: 0;
+}
+
+
+
+
+
+p {
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  font-weight: 700;
+  color: white;
+  background-color: #001B11;
+}
+
+.a {
+  z-index: 1;
+
+  top: 57%;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #038058;
+}
+
+.z {
+  z-index: 2;
+
+  top: 54%;
+  -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #038058;
+}
+
+.e {
+  z-index: 3;
+  top: 50%;
+}
+
+
